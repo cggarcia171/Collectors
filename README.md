@@ -1,4 +1,4 @@
-# Rumbl
+# CollectorSite
 
 To start your Phoenix server:
 
