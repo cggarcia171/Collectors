@@ -1,4 +1,4 @@
-# CollectorSite
+# iBuyThings
 
 To start your Phoenix server:
 
