@@ -13,7 +13,7 @@ config :rumbl, RumblWeb.Endpoint,
 
 # Configure your database
 config :rumbl, Rumbl.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "cggarcia171",
+  password: "",
   database: "rumbl_prod",
   pool_size: 15
