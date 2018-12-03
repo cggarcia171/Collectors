@@ -1,0 +1,18 @@
+<h1>Show Collection</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @collection.title %>
+  </li>
+
+  <li>
+    <strong>Type:</strong>
+    <%= @collection.type %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.collection_path(@conn, :edit, @collection) %></span>
+<span><%= link "Back", to: Routes.collection_path(@conn, :index) %></span>

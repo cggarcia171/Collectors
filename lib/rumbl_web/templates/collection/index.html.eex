@@ -1,0 +1,28 @@
+<h1>Listing Collections</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Type</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for collection <- @collections do %>
+    <tr>
+      <td><%= collection.title %></td>
+      <td><%= collection.type %></td>
+
+      <td>
+        <%= link "Show", to: Routes.collection_path(@conn, :show, collection) %>
+        <%= link "Edit", to: Routes.collection_path(@conn, :edit, collection) %>
+        <%= link "Delete", to: Routes.collection_path(@conn, :delete, collection), method: :delete, data: [confirm: "Are you sure?"] %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Collection", to: Routes.collection_path(@conn, :new) %></span>

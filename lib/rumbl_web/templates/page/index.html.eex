@@ -1,0 +1,4 @@
+<section class="phx-hero">
+  <h1><%= gettext "%{name}!", name: "🍁" %></h1>
+  <p>Omae wa mou shinderu</p>
+</section>

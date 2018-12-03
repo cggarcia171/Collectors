@@ -1,0 +1,5 @@
+<h1>Edit Collection</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.collection_path(@conn, :update, @collection)) %>
+
+<span><%= link "Back", to: Routes.collection_path(@conn, :index) %></span>
